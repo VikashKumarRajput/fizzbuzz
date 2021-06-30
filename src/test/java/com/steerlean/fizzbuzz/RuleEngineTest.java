@@ -30,4 +30,13 @@ public class RuleEngineTest {
 
 	}
 
+	@Test
+	public void testRuleNotPassed() {
+		List<IRule> rules = new ArrayList<>();
+		RuleEngine ruleEngine = new RuleEngine(rules);
+		String result = ruleEngine.run(1);
+		Assert.assertEquals(""+1, result);
+
+	}
+
 }
