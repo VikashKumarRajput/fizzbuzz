@@ -11,7 +11,7 @@ import junit.framework.Assert;
 public class NumberProcessorTest {
 
 	@Test
-	public void testRulePassed() {
+	public void testForProcessRange() {
 		RuleEngine ruleEngine = Mockito.mock(RuleEngine.class);
 		List<String> processedNumbers = new ArrayList<>();
 		NumberProcessor numberProcessor = new NumberProcessor(ruleEngine);
